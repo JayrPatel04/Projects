@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jay Fitness</title>
+
+</head>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap" rel="stylesheet">
+
+ 
+<style>
+    body{
+        font-family: 'Baloo Da 2', cursive;
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg'); 
+    }
+    .left{
+        display: inline-block;
+        /* border:2px solid red; */
+        position: absolute;
+        left:34px;
+        top:20px;
+
+    }
+    .left img{
+        width: 70px;
+        filter: invert(100%);
+        
+    }
+    .left div{
+        text-align:center;
+        line-height:15px;
+        font-size:17px;
+    }
+    .mid{
+        display:block;
+        width: 40%;
+        margin: 10px auto;
+        /* border:2px solid yellow; */
+    
+    }
+    .right{
+        position:absolute;
+        display: inline-block;
+        right:34px;
+        top:25px;  
+        /* border: 2px solid blue; */
+    }
+    .navbar{
+        display:inline-block;
+
+    }
+    .navbar li{
+        display:inline-block;
+        font-size:20px;
+    }
+    .navbar a{
+        color:white;
+        text-decoration:none;
+        padding: 10px;
+    }
+    .navbar li a:hover,.navbar li a:active{
+        text-decoration:underline;
+        color:grey;
+    }
+    .btn{
+        padding:2px 2px;
+        margin:0px 2px;
+        color:white;
+        background-color:rgb(36, 33, 33);
+        border:2px solid grey;
+        border-radius:20px;
+        font-size:15px;
+        cursor:pointer;
+        font-family: 'Baloo Da 2', cursive;
+        
+    }
+    .btn:hover{
+        background-color:rgb(109, 96, 96);
+    }
+
+    .container{
+        border:3px solid white;
+        margin: 150px 100px;
+        padding:60px 60px;
+        border-radius:20px;
+        width:36%;
+        
+    }
+    .container button{
+        display: block;
+        width:20%;
+        margin:20px auto;
+        
+    }
+    .form{
+        color:white;
+    }
+
+    .form input{
+        font-family: 'Baloo Da 2', cursive;
+        text-align:center;
+        font-size:17px;
+        display:block;
+        width:100%;
+        padding:3px;
+        margin:9px auto;
+        border:2px solid black;
+        border-radius:5px;
+
+    }
+
+    </style>
+<body>
+    <header>
+        <div class="header">
+        <!--Left box for logo-->
+        <div class="left">
+            <img src="img/gym.png" alt="Error">
+            <div>Jay Ftiness</div>
+
+        </div>
+        <!--Mid for box navigator-->
+        <div class="mid">
+                <ul class="navbar">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Fitness Calculator</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+        </div>
+        <!--Right box for buttons-->
+        <div class="right">
+<button class="btn">Call Us Now</button>
+<button class="btn">Email us</button>
+        </div>
+                
+        </div>
+    </header>
+    <div class="container">
+
+    <h1>Join the best gym of Mumbai now</h1>
+    <form action="noaction.php">
+    <div class="form">
+        <input type="text"  placeholder="Enter your Name">
+    </div>
+    <div class="form">
+        <input type="text"  placeholder="Enter your Age">
+    </div>
+    <div class="form">
+        <input type="text"  placeholder="Enter your Gender">
+    </div>
+    <div class="form">
+        <input type="text"  placeholder="Enter your Locality">
+    </div>
+    <div class="form">
+        <input type="text"  placeholder="Enter your Email Id">
+    </div>
+    <div class="form">
+        <input type="text"  placeholder="Enter your Phone Number">
+    </div>
+    <div>
+        <button class="btn">Submit</button>
+    
+    </div>
+    </form>
+    </div>
+    
+    
+</body>
+</html>
